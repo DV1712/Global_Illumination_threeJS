@@ -4,7 +4,7 @@ import {MATERIAL_MODEL_TYPE} from './material_model.js'
 
 
 
-export const LIGHT_POSITION = new THREE.Vector3(2.7, 8, 0); // Default light position
+export const LIGHT_POSITION = new THREE.Vector3(15, 8, 0); // Default light position
 export const LIGHT_COLOR = new THREE.Color(1, 1, 1); // Default light color
 export const LIGHT_INTENSITY = 50; // Default light intensity
 export const LIGHT_DISTANCE = 120; // Default light distance
@@ -186,4 +186,9 @@ export const TEXTURE = {
 
 }
 
-
+export const SHADERS = {
+    cook_torrance: {
+        vertexShader: 'shaders/cookTorranceVertex.glsl',
+        fragmentShader: 'shaders/glsl',
+    }
+}
